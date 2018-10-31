@@ -1,0 +1,9 @@
+Create users table
+CREATE TABLE `nepalese_food_recipe`.`users` ( `user_id` INT NOT NULL AUTO_INCREMENT , `username` VARCHAR(30) NOT NULL , `email` VARCHAR(50) NOT NULL , `password` VARCHAR(30) NOT NULL , `activation` CHAR(32) NOT NULL ) ENGINE = InnoDB;
+
+Create rememberme table
+
+
+
+Create forgotpassword table
+CREATE TABLE `nepalese_food_recipe`.`forgotpassword` ( `id` INT NOT NULL AUTO_INCREMENT , `user_id` INT NOT NULL , `key` CHAR(32) NOT NULL , `time` INT NOT NULL , `status` VARCHAR(7) NOT NULL , UNIQUE (`id`)) ENGINE = InnoDB;
